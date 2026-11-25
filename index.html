@@ -1,0 +1,184 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title></title>
+  <style>
+    :root { color-scheme: light; --ink:#263238; --muted:#65747a; --green:#438b78; --pale:#f2f8f5; --line:#e1ebe6; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif; line-height:1.75; }
+    a { color:inherit; }
+    .wrap { width:min(1120px,92%); margin:auto; }
+    header { position:sticky; top:0; z-index:5; background:#ffffffed; border-bottom:1px solid var(--line); backdrop-filter:blur(10px); }
+    nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { text-decoration:none; font-size:1.15rem; font-weight:800; letter-spacing:.04em; }
+    .brand span { color:var(--green); }
+    .links { display:flex; flex-wrap:wrap; gap:24px; }
+    .links a { text-decoration:none; color:var(--muted); font-size:.95rem; }
+    .links a:hover { color:var(--green); }
+    .hero { background:linear-gradient(120deg,#f3faf6,#e7f2ed); padding:92px 0 84px; }
+    .hero-inner { max-width:760px; }
+    .eyebrow { color:var(--green); font-weight:700; letter-spacing:.15em; text-transform:uppercase; }
+    h1 { font-size:clamp(1.8rem,6vw,4.2rem); line-height:1.2; margin:3px 0 6px; }
+    .hero p { color:var(--muted); font-size:1.6rem; max-width:980px; }
+    .button { display:inline-block; margin-top:18px; padding:11px 23px; border-radius:999px; color:white; background:var(--green); text-decoration:none; font-weight:700; }
+    section { padding:72px 0; }
+    section.alt { background:var(--pale); }
+    .section-head { max-width:720px; margin:0 auto 34px; text-align:center; font-size:1.3rem; }
+    h2 { font-size:clamp(1.7rem,4vw,2.35rem); line-height:1.3; margin:0 0 12px; }
+    .section-head p,.muted { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:25px; box-shadow:0 8px 24px #243b3210; }
+    .card h3 { margin:0 0 10px; font-size:1.5rem; }
+    .card p { margin:0; color:var(--muted); font-size:1.3rem; }
+    .videos { grid-template-columns:repeat(3,minmax(0,1fr)); }
+    .video { overflow:hidden; padding:0; }
+    .video img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:#e9efec; }
+    .video-copy { padding:17px 18px 20px; }
+    .video-copy h3 { font-size:1.05rem; margin:0 0 5px; }
+    .video-copy p { color:var(--muted); font-size:.92rem; margin:0; }
+    .video-copy a { text-decoration:none; }
+    .video-copy a:hover { color:var(--green); }
+    .articles { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+    .article-link { display:block; margin-top:15px; color:var(--green); font-weight:700; text-decoration:none; }
+    .contact { text-align:center; }
+    .contact-box { max-width:760px; margin:auto; padding:34px; background:#fff; border:1px solid var(--line); border-radius:18px; }
+    .contact-box p { margin:8px 0; }
+    footer { padding:25px 0; background:#243a34; color:#e8f1ec; font-size:.92rem; }
+    footer .wrap { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media(max-width:800px) { .grid,.videos,.articles { grid-template-columns:repeat(2,minmax(0,1fr)); } nav { align-items:flex-start; flex-direction:column; padding:16px 0; gap:8px; } .links { gap:14px; } }
+    @media(max-width:560px) { .grid,.videos,.articles { grid-template-columns:1fr; } .hero { padding:66px 0; } section { padding:54px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="主要導覽">
+      <a class="brand" href="#home"> <span></span></a>
+      <div class="links">
+        <a href="#about"></a><a href="#videos">教學影片</a><a href="#articles">知識分享</a><a href="https://line.me/ti/p/@022zsrwj">聯絡我們</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-inner">
+        <div class="eyebrow">健身房/私人教練會館業者</div>
+        <h1>健身房/私人教練會館業者專屬教育訓練與收單話術指南</h1>
+        <p>會請私人教練的學員（包含高階主管、企業主與注重外型的女性），都是「願意為身材與外表長期投資、極度重視健康安全、且大量流汗運動」的頂級客群。許多學員把胸肌、背肌練得非常完美，卻因為高強度訓練、補充高蛋白或家族基因導致頂上稀疏，甚至因為怕流汗滑動而不敢戴傳統假髮。這頂「運動級醫療功能髮帽」剛好幫教練補齊學員顏值的最後一塊拼圖！</p>
+        <a class="button" href="https://line.me/ti/p/@022zsrwj">點擊回到經銷商官LINE繼續發問</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">教育訓練</div><h2>一、私人教練「訓練組間休息／體態諮詢時」自然破冰話術</h2></div>
+        <div class="grid">
+          <article class="card">
+            <h3>1. 針對「重視體態與顏值的男學員」（身材練好了，更需要頂上完整氣場）：</h3>
+            <p>「哥，你最近體脂降很多、整個身形線條都出來了，穿衣服超有型！不過很多學員私下跟我聊，身材練到這麼完美，就差頂上髮量再飽滿一點，整個人直接年輕十歲；而且平常重訓流汗量大、跑戶外強風吹，一般傳統假髮靠膠水或夾子，流汗會滑動又悶出毛囊炎，根本不敢戴！</p>
+            <P>我們會館現在已經正式加盟成為總部授權經銷商，引進了由台、美醫療專家團隊共同研發，及多國專利申請中的『TruHair 3D 真能髮功能髮帽』！它不是傳統假髮，是美國、台灣牙科生物力學專家與整合醫學博士、整形外科、皮膚科、心理醫師跨科研發的，100% 全真人頭髮純手工鉤織，近距離面對面聊天都完全看不出來！不用黏膠也沒有夾子，靠牙科生物力學物理固位 1:1 貼合頭型，1 秒戴上、5 秒定位，做波比跳、重訓或戶外路跑強風吹都完全不會掉，還有皮膚科級進階止汗清爽方案，流汗超透氣！因為我們採異業結盟方式，由醫師團隊聯盟直接回饋給消費者，價格比傳統店面式販售低 20% 到 35%，而且全程可以約到你家裡或私人空間做遮臉 3D 掃描，連總部團隊都不知道訂製者是誰！」</P>
+          </article>
+          <article class="card">
+            <h3>2. 針對「注重健康的女學員（幫先生、爸爸詢問）」或「常染白髮的學員」（健康安全切角）：</h3>
+            <p>「姐／哥，來找教練訓練的學員都最注重身體健康跟排毒。此外，醫學界早就有共識，長期頻繁燙染白髮其實傷肝、傷腎，更有致癌的風險；而且如果頭髮已經變稀疏，頭皮根本也沒有本錢再進行燙染，所以台、美醫療專家團隊才會共同研發這頂功能髮帽，目前更有多國專利申請中！從自然黑、30%～80% 花白到全白都能直接客製，不用再拿肝腎健康去換造型。我先幫你把我們會館的專屬連結存進你的官方 LINE，回去用手機就能玩『免費 AI 線上換髮型』！」</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about2">
+      <div class="wrap">
+        <div class="section-head">
+          <h2> 二、 教練必背 4 大核心賣點（30 秒講完重點）</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <p>1. 100% 真人頭髮純手工鉤織，近距離零破綻：全真人原生髮絲一根根純手工鉤織，近距離面對面指導訓練或社交聊天也完全看不出來（自然黑、30%～80% 花白、全白及燙染造型皆可客製）。</p>
+          </article>
+          <article class="card">
+            <p>2. 台、美醫療專家團隊共同研發，及多國專利申請中・劇烈運動都不掉：牙科生物力學專家主導 1～2 分鐘極速紅外線 3D 掃描，物理固位 1:1 貼合頭型，1 秒戴上、5 秒定位，重訓、跑步、強風吹襲都牢牢貼合。</p>
+          </article>
+          <article class="card">
+            <p>3. 無膠無夾・進階止汗清爽方案（專為高流汗運動設計）：捨棄化學黏膠與金屬夾子，零拉扯不傷毛囊，搭配皮膚科級超透氣網底與進階止汗轉介方案，流汗不滑動、不悶出痘痘。</p>
+          </article>
+          <article class="card">
+            <p>4. 極致隱私・「幾乎零接觸」遮臉掃描：完全不用去傳統實體店面拋頭露面！3D 掃描可直接預約到自宅或私人辦公室，掃描時有專用裝置完整遮蓋臉部，工程師連長相都看不到，只需 1 分鐘指導伴侶或親友協助定位即離場，連總部團隊都不知道訂製者是誰。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about3">
+      <div class="wrap">
+        <div class="section-head">
+          <h2> 三、 課後結帳前「三步綁定＋500 元鎖客」SOP</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>第一步：加「消費者官方 LINE」並存好本會館專屬連結</h3>
+            <p>動作：協助學員（或女學員替家人）掃碼加入「TruHair 消費者 LINE 官方帳號」，再掃描本會館專屬 QR Code，將「本會館專屬追蹤連結」與「專屬優惠碼」直接輸入傳進對方的 LINE 對話框裡。</p>
+            <p>話術：「哥／姐，我先幫你加入總部的消費者官方 LINE，並把我們會館的專屬連結跟優惠碼直接存在聊天室裡。您只要在網路上訂購，就可以直接送到世界各地，因為您的 3D 資料都已經在雲端了；只要您當地熟悉或喜歡的理髮師跟專人聯繫，線上都可以完整教會他們做專屬髮型的修剪以及保養各項細節，總部都會細心處理，絕對不會變成假髮孤兒！」</p>
+          </article>
+          <article class="card">
+            <h3>第二步：引導免費 AI 換髮體驗＋選擇 500 元訂金鎖客方案</h3>
+            <p>話術：「點開 LINE 裡這條連結，系統會免費送一次『AI 線上換髮型』體驗，現在或回家就能拍照預覽搭配好身材後的年輕樣子（想看花白比例或實品照，在 LINE 問客服也會直接發照片給你看）。接著我幫你把折扣優惠碼存進 LINE 裡，有兩種方案：</p>
+            <p>一般優惠碼（折 500 元）：直接將 500 元優惠碼存進 LINE 裡留存，隨時想訂都能在原本比傳統店面式販售低 20%～35% 的價格上再折 500 元。</p>
+            <p>限時加碼優惠碼（折 1,000 元）：如果想拿最高 1,000 元折扣，現在只要先在我們櫃檯付 500 元預約訂金，我立刻幫你開通 1,000 元大額優惠碼存進 LINE 裡！</p>
+            <p>2 天內完成下單：這 500 元訂金全額退還（下次來上教練課隨時領回；若不方便跑一趟，總部也能直接折換成等值的『智慧髮專用清潔保養用品』免費寄送到府）。</p>
+            <p>超過 2 天才完成：超過兩天優惠期後，這 500 元訂金雖然不退還，但依然可以全額轉為使用 500 元優惠方案（直接折抵訂單 500 元），完全不會浪費！」</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="articles">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>四、 熟客回館追進＆會館教練分潤互助制度</h2>
+          <p><strong>學員二次上課「不惹人厭」切入法：</strong></p>
+          <p>換不同教練或櫃檯同仁服務同一位學員時先禮貌確認：「哥／姐，不曉得上次其他教練服務時，有沒有提過我們會館已經加盟成為『TruHair 3D 真能髮功能髮帽』的授權經銷商？」若已加過 LINE，不再重複背稿推銷，改用輕鬆話題切入：① 上新通知（總部這個月又出了適合運動休閒的新款造型與自然花白比例）、② 限時檔期提醒（最近總部剛好有季節優惠加碼）、③ 專用潔髮保養品（醫療團隊研發的 pH 5.5 弱酸性潔髮泡泡，運動大量流汗後清潔頭皮與保養髮帽都超好用）。</p>
+          <p><strong>會館同仁「首單 50/50 感恩對分」互助公約：</strong></p>
+          <p>總部系統一律以客戶最終下單時輸入的專屬連結／優惠碼（臨門一腳的 B 同仁）作為終身繫結依據。若客戶 LINE 對話框中留有最初 A 同仁首次介紹傳送連結的紀錄，建議由成交的 B 同仁將首單個人分潤獎金「50% / 50% 對分」答謝 A 同仁，第二筆起之終身回購分潤則全數歸屬負責後續維護的 B 同仁，鼓勵團隊互助接力！</p>
+
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="about4">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>五、 健身學員常見 QA 應對（精簡 3 題，不重複贅述）</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Q1：重訓爆發力強、跑步又會大量流汗，真的不會滑動、脫落或悶熱嗎？</h3>
+            <p>A：「完全不會！由台、美牙科生物力學專家主導 1～2 分鐘極速 3D 掃描，物理固位 1:1 貼合頭型（多國專利申請中），1 秒穿戴、5 秒定位，做大重量或戶外路跑迎風都牢牢貼合；搭配皮膚科級超透氣網底與『進階止汗轉介方案』，運動流汗依然乾爽不滑動！」</p>
+          </article>
+          <article class="card">
+            <h3>Q2：在健身房都認識很多朋友，不想去傳統實體店面拋頭露面怎麼辦？</h3>
+            <p>A：「3D 掃描可以直接約在你家裡或私人空間，掃描時有專用裝置會把臉部完全遮住，工程師連長相都看不到；只需伴侶或信任的親友在旁邊花 1 分鐘聽工程師指導協助定位，掃完工程師立刻離開，連總部團隊都不知道訂製者是誰！」</p>
+          </article>
+          <article class="card">
+            <h3>Q3：兩鬢跟頭頂都有白頭髮，整頂全黑會不會太假？</h3>
+            <p>A：「完全不會！100% 全真人頭髮純手工鉤織，可以依照你原本兩鬢的白髮比例，精準客製 30%、50%、80% 不同比例的自然花白髮，甚至全白或微捲造型，近距離面對面看就像自己長出來的一樣自然！」</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="alt contact" id="contact">
+      <div class="wrap"><div class="section-head"><div class="eyebrow">Contact</div><h2>聯絡我們</h2><p></p></div>
+        
+      <a class="button" href="https://line.me/ti/p/@022zsrwj" target="_blank" rel="noopener">前往 LINE 聯絡</a>
+
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span></span><a href="" target="_blank" rel="noopener"></a></div></footer>
+</body>
+</html>
