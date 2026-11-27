@@ -1,0 +1,230 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title></title>
+  <style>
+    :root { color-scheme: light; --ink:#263238; --muted:#65747a; --green:#438b78; --pale:#f2f8f5; --line:#e1ebe6; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif; line-height:1.75; }
+    a { color:inherit; }
+    .wrap { width:min(1120px,92%); margin:auto; }
+    header { position:sticky; top:0; z-index:5; background:#ffffffed; border-bottom:1px solid var(--line); backdrop-filter:blur(10px); }
+    nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { text-decoration:none; font-size:1.15rem; font-weight:800; letter-spacing:.04em; }
+    .brand span { color:var(--green); }
+    .links { display:flex; flex-wrap:wrap; gap:24px; }
+    .links a { text-decoration:none; color:var(--muted); font-size:.95rem; }
+    .links a:hover { color:var(--green); }
+    .hero { background:linear-gradient(120deg,#f3faf6,#e7f2ed); padding:92px 0 84px; }
+    .hero-inner { max-width:760px; }
+    .eyebrow { color:var(--green); font-weight:700; letter-spacing:.15em; text-transform:uppercase; }
+    h1 { font-size:clamp(1.8rem,6vw,4.2rem); line-height:1.2; margin:3px 0 6px; }
+    .hero p { color:var(--muted); font-size:1.6rem; max-width:980px; }
+    .button { display:inline-block; margin-top:18px; padding:11px 23px; border-radius:999px; color:white; background:var(--green); text-decoration:none; font-weight:700; }
+    section { padding:72px 0; }
+    section.alt { background:var(--pale); }
+    .section-head { max-width:720px; margin:0 auto 34px; text-align:center; font-size:1.3rem; }
+    h2 { font-size:clamp(1.7rem,4vw,2.35rem); line-height:1.3; margin:0 0 12px; }
+    .section-head p,.muted { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:25px; box-shadow:0 8px 24px #243b3210; }
+    .card h3 { margin:0 0 10px; font-size:1.5rem; }
+    .card p { margin:0; color:var(--muted); font-size:1.3rem; }
+    .videos { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .video { overflow:hidden; padding:0; }
+    .video img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:#e9efec; }
+    .video-copy { padding:17px 18px 20px; }
+    .video-copy h3 { font-size:1.05rem; margin:0 0 5px; }
+    .video-copy p { color:var(--muted); font-size:.92rem; margin:0; }
+    .video-copy a { text-decoration:none; }
+    .video-copy a:hover { color:var(--green); }
+    .articles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .article-link { display:block; margin-top:15px; color:var(--green); font-weight:700; text-decoration:none; }
+    .contact { text-align:center; }
+    .contact-box { max-width:760px; margin:auto; padding:34px; background:#fff; border:1px solid var(--line); border-radius:18px; }
+    .contact-box p { margin:8px 0; }
+    footer { padding:25px 0; background:#243a34; color:#e8f1ec; font-size:.92rem; }
+    footer .wrap { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media(max-width:800px) { .grid,.videos,.articles { grid-template-columns:repeat(2,minmax(0,1fr)); } nav { align-items:flex-start; flex-direction:column; padding:16px 0; gap:8px; } .links { gap:14px; } }
+    @media(max-width:560px) { .grid,.videos,.articles { grid-template-columns:1fr; } .hero { padding:66px 0; } section { padding:54px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="主要導覽">
+      <a class="brand" href="#home"> <span></span></a>
+      <div class="links">
+        <a href="#about"></a><a href="#videos">教學影片</a><a href="#articles">知識分享</a><a href="https://line.me/ti/p/@022zsrwj">聯絡我們</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-inner">
+        <div class="eyebrow">美髮沙龍／髮型設計師</div>
+        <h1>【美髮沙龍／髮型設計師】專屬教育訓練與收單話術指南</h1>
+        <p>美髮設計師最懂客人的頭型與髮質條件，這套系統100% 不會影響你們原本的燙染、護髮與接髮業績！愛漂亮的客人依然會繼續找你們做造型、燙染與接髮；而我們要幫你開發的，是「客人的家人（先生、爸爸、媽媽）或頭頂已經太細軟稀疏、根本沒條件進行燙染與接髮，卻又有強烈外貌焦慮的族群」——把原本做不到燙染業績的客群，變成你每 2～3 週回來洗護、修剪與定期保養的全新長期 VIP！</p>
+        <div>
+        <p>點擊回到經銷商</p>
+        <a class="button" href="https://line.me/ti/p/@022zsrwj" style="font-size: 1.3rem;">官LINE繼續發問</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" >
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">教育訓練</div>
+        <h2>一、 給美髮沙龍老闆與設計師的核心利多</h2>
+        <h3>（完全不搶本業，只賺增量！）</h3>
+      </div>
+        <div class="grid">
+          <article class="card">
+            <h3>1. 主攻「無法燙染、無法接髮」的家人與稀疏客群，業績純增量：</h3>
+            <p>愛美的熟客繼續在店裡做燙染與接髮；而她家裡頭髮已經太稀疏、太細軟，連燙染藥水或接髮都沒辦法施作、燙染也改善不了外貌的先生或長輩，正是 3D 真能髮功能髮帽最精準的客戶，完全不影響設計師原本的主力收入！</p>
+          </article>
+          <article class="card">
+            <h3>2. 設計師免學 3D 掃描，成品可選「全毛坯」或「預剪 80%～90%」：</h3>
+            <p>3D 掃描全由總部工程師在 1～2 分鐘內搞定，設計師零技術負擔；成品寄出時，設計師可自由選擇「未修剪全毛坯」親自操刀設計，或由總部先「預剪完成 80%～90%」再交由你做最後臉型微調（總部提供免費線上教學與交接），賺取專業剪裁費。</p>
+          </article>
+          <article class="card">
+            <h3>3. 鎖定每 2～3 週回店「洗護＋修剪＋保養」的穩定回流客：</h3>
+            <p>戴了功能髮帽的客人，依然需要每 2～3 週回來修剪原生側邊頭髮、清洗與保養髮帽。一旦透過你們沙龍建檔綁定，他一輩子都離不開你的剪刀與保養服務！</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about2" style="background:#e1ebe6;">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>二、 沙龍現場「自然破冰話術」</h2>
+          <h3>（洗頭、燙染等待或吹整時切入）</h3>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>1. 針對來店「燙染／接髮／護髮」的愛美熟客，切入她的家人（先生、爸爸、媽媽）：</h3>
+            <p>「姐，你這樣定期來做燙染造型，整個人看起來超年輕又有精神，為了漂亮真的要好好打理自己！對了，那你先生（或爸爸、媽媽）呢？如果家裡有人頭髮已經變得比較細軟、稀疏，連想燙澎或接髮都沒有條件做、怎麼燙染也改善不了外貌焦慮的話，跟你分享一個超棒的新消息——我們沙龍現在已經正式加盟成為總部的授權經銷商之一，引進了跨科醫療團隊研發的『TruHair 3D 真能髮功能髮帽』！
+                它不是傳統假髮，是牙科生物力學專家跟整合醫學博士、整形外科、皮膚科、心理醫師跨科研發的，100% 全真人頭髮純手工鉤織，近距離面對面看都完全看不出來！不用黏膠也不用夾子，1 秒戴上、5 秒定位，騎車吹風都完全不會掉。因為我們採異業結盟方式，由醫師團隊聯盟直接回饋給消費者，價格比傳統店面式販售低 20% 到 35%！你今天不用叫他跑來沙龍尷尬，我先幫你把我們店的專屬連結存進你的官方 LINE，你回去可以直接轉傳給他，在家用手機玩『免費 AI 線上換髮型』，而且全程可以約在家裡遮臉 3D 掃描，沒有任何陌生人會知道，成品寄來後再交給我幫他照臉型修剪帥氣造型！」
+            </p>
+          </article>
+          <article class="card">
+            <h3>2. 針對「頭頂過於細軟稀疏、設計師評估無法燙染或接髮」的客人：</h3>
+            <p>「大哥／姐，老實說你頭頂這區的頭髮現在比較細軟、髮量也比較少，如果硬幫你上藥水燙染或做接髮，效果撐不起來、也會拉扯到你原本珍貴的毛囊，沒辦法真正幫你改善外貌。不過別擔心，我們沙龍現在已經是『TruHair 3D 真能髮功能髮帽』的授權經銷商，專門解決這種無法靠燙染或接髮改善的困擾！它是 100% 真人頭髮手工鉤織，黑髮、30%～80% 花白、全白甚至你想要的捲度都能直接客製，無膠無夾 1 秒戴上、5 秒定位，成品寄來我再親自幫你做最後臉型修剪，以後每兩三週回來洗頭順便保養髮帽，超級自然又有型！」</p>          
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about3">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>三、 設計師必背 4 大核心賣點（30 秒講完重點）</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>1. 100% 真人頭髮純手工鉤織，近距離零破綻：</h3>
+            <p>設計師最在乎的自然髮流與毛鱗片光澤，每一根都是全真人頭髮手工鉤織，近距離面對面聊天也完全看不出來（自然黑、30%～80% 花白、全白、燙染造型皆可客製，專為無法燙染或接髮的稀疏髮質打造）。</p>
+          </article>
+          <article class="card">
+            <h3>2. 牙科生物力學專家主導・1 秒穿戴、5 秒定位：</h3>
+            <p>跨科醫療團隊共同研發，技術升級只需 1～2 分鐘完成紅外線 3D 掃描，物理貼合頭型，1 秒戴上、5 秒定位，運動、騎車、強風吹都絕對不會掉。</p>
+          </article>
+           <article class="card">
+            <h3>3. 無膠無夾・不傷毛囊超透氣：</h3>
+            <p>完全沒有化學黏膠與金屬夾子，不拉扯原本健康的頭髮，搭配皮膚科級進階止汗清爽方案，夏天戴一整天也不悶熱長痘。</p>
+          </article>
+           <article class="card">
+            <h3>4. 極致隱私・「幾乎零接觸」遮臉掃描：</h3>
+            <p>愛面子的男生完全不用去傳統實體店面拋頭露面！3D 掃描可以直接約在家裡（或沙龍 VIP 室），掃描時有專用裝置完整遮蓋臉部，工程師連長相都看不到，只需 1 分鐘指導伴侶或家人協助定位，掃完工程師立刻離開，連總部團隊都不知道訂製者是誰。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about3" style="background:#e1ebe6;">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>四、 結帳前「三步綁定＋500 元鎖客」SOP</h2>
+          <h3>（牢牢鎖住全球終身分潤）</h3>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>第一步：加「消費者官方 LINE」並存好本店專屬連結</h3>
+            <p>動作：協助客人掃碼加入「TruHair 消費者 LINE 官方帳號」，再掃描本店專屬 QR Code，將「本店專屬追蹤連結」與「專屬優惠碼」直接輸入傳進客人的 LINE 對話框裡。</p>
+            <p>話術：「哥／姐，我先幫你加入總部的消費者官方 LINE，並把我們沙龍的專屬連結跟優惠碼直接存在你的聊天室裡（如果要幫先生或爸媽看，直接把這條連結轉傳給他就好）。系統會終身認得你們是我們店的貴賓，以後無論到全世界哪裡再訂購第 2 頂、第 3 頂，權益都永遠跟我們店連動（後續修剪與清潔保養也都能直接找我），優惠碼也直接躺在裡面不會找不到！」</p>      
+          </article>
+          <article class="card">
+            <h3>第二步：引導免費 AI 換髮體驗＋選擇 500 元訂金鎖客方案</h3>
+            <p>話術：「點開 LINE 裡這條連結，系統會免費送一次『AI 線上換髮型』體驗，馬上就能預覽變年輕後的樣子（想看花白或燙染實品照，在 LINE 問客服也會直接發照片給你看）。接著我先幫你把折扣優惠碼存進 LINE 裡，有兩種方案：</p>
+            <p>一般優惠碼（折 500 元）：直接將 500 元優惠碼存進你的 LINE 裡留存，隨時想訂都能在原本比傳統店面式販售低 20%～35% 的價格上再折 500 元。</p>      
+            <p>限時加碼優惠碼（折 1,000 元）：如果想拿最高 1,000 元折扣，現在只要先在我們櫃檯付 500 元預約訂金，我立刻幫你開通 1,000 元大額優惠碼存進 LINE 裡！」</p>         
+            <p>2 天內完成下單：這 500 元訂金全額退還（下次來洗頭剪髮隨時領回；若不方便跑一趟，總部也能直接折換成等值的『智慧髮專用清潔保養用品』免費寄送到府）。</p>
+            <p>超過 2 天才完成：超過兩天優惠期後，這 500 元訂金雖然不退還，但依然可以全額轉為使用 500 元優惠方案（直接折抵訂單 500 元），完全不會浪費！」</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about4">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>五、 熟客回店追進＆沙龍同仁分潤互助制度</h2>
+          <h3>（防反感、防搶單）</h3>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>1. 熟客二次／三次回店「不惹人厭」切入法：</h3>
+            <p>換不同設計師或助理服務時，先禮貌確認：「哥／姐，不曉得上次其他同仁服務時，有沒有提過我們沙龍已經正式加盟成為『TruHair 3D 真能髮功能髮帽』的授權經銷商？」</p>
+            <p>若客人已加過 LINE，不再重複背稿推銷，改用三種輕鬆話題切入：① 上新通知（總部這個月又上架了新款造型與自然花白比例，回去可以叫客服傳實品照給先生或爸媽看看）、② 限時檔期提醒（最近總部剛好有季節優惠加碼，趕快幫家裡沒辦法靠燙染改善外貌的長輩或另一半預約）、③ 專用潔髮保養品（介紹醫療團隊研發的 pH 5.5 弱酸性潔髮泡泡，居家護頭皮與未來清潔髮帽都適用）。</p>
+          </article>
+          <article class="card">
+            <h3>2. 沙龍同仁「首單 50/50 感恩對分」互助公約：</h3>
+            <p>總部系統一律以客人最終下單時輸入的專屬連結／優惠碼（臨門一腳的 B 同仁）作為終身繫結依據。</p>
+            <p>若客人手機 LINE 對話框中留有最初 A 同仁首次介紹傳送連結的紀錄，建議由成交的 B 同仁將首單個人分潤獎金「50% / 50% 對分」答謝 A 同仁，第二筆起之終身回購分潤則全數歸屬負責後續維護的 B 同仁，讓全店夥伴放心接力、互助共贏！</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about5" style="background:#e1ebe6;">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>六、 沙龍常見 QA 應對（客人最常問的 4 題）</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Q1：我現在頭髮稀疏但還有一點頭髮，戴這個需要把原本的頭髮剃掉嗎？</h3>
+            <p>A：「一根原生頭髮都不用剃！ 它沒有化學膠水、也沒有金屬夾子拉扯，是靠牙科生物力學精準 3D 掃描頭型、物理貼合固定，完全不傷你原本健康的毛囊，每次回來洗頭保養也非常方便！」</p>
+          </article>
+          <article class="card">
+            <h3>Q2：愛面子的男生不想在沙龍大廳被別人看到怎麼辦？</h3>
+            <p>A：「完全不用在大廳露面！3D 掃描可以直接約在你們家裡進行，掃描時有專用裝置會把臉部完全遮住，工程師連長相都看不到；只需要伴侶或家人在旁邊花 1 分鐘聽工程師指導協助定位，掃完工程師立刻離開，連總部團隊都不知道訂製者是誰！」</p>
+          </article>
+          <article class="card">
+            <h3>Q3：寄到家裡之後，或以後出國旅居，要去哪裡修剪跟做售後服務？</h3>
+            <p>A：「出貨前總部可以依照需求提供『未修剪全毛坯』或先『預剪完成 80%～90%』，寄到後直接拿來沙龍交給我幫你量身修剪微調最自然；無論你以後到世界各地旅居，只要在線上再續訂就可以了，當地一定會有你熟悉的理髮師或幫你剪頭髮的設計師，總部都會與他聯繫進行免費的線上教學，一定可以為您量身修剪出符合你臉型跟風格的頭髮！有任何問題在世界各地都可以跟我們聯繫，團隊的官方 LINE 也完全可以讓他詢問任何問題，絕對不會變成『假髮孤兒』！ 而你在國內時，後續的日常清潔與保養也都可以直接回來找我們沙龍處理！」</p>
+          </article>
+          <article class="card">
+            <h3>Q3：我先生／爸媽白頭髮很多，又沒辦法一直燙染，這個也能做嗎？</h3>
+            <p>A：「完全沒問題！專門就是為這種沒條件靠燙染或接髮改善外貌的家人設計的！從全黑髮、30%、50%、80% 不同比例的花白髮，到全白髮，甚至想做出燙捲或染髮的立體造型全部都能直接客製。你只要在官方 LINE 裡直接發問說想看哪種白髮比例，總部客服馬上會傳好幾款對應的實體成品參考照給你看！」</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="alt contact" id="contact">
+      <div class="wrap"><div class="section-head"><div class="eyebrow">Contact</div><h2>聯絡我們</h2><p></p></div>
+        
+      <a class="button" href="https://line.me/ti/p/@022zsrwj" target="_blank" rel="noopener">回到經銷商官方LINE</a>
+
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span></span><a href="" target="_blank" rel="noopener"></a></div></footer>
+</body>
+</html>

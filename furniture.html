@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title></title>
+  <style>
+    :root { color-scheme: light; --ink:#263238; --muted:#65747a; --green:#438b78; --pale:#f2f8f5; --line:#e1ebe6; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif; line-height:1.75; }
+    a { color:inherit; }
+    .wrap { width:min(1120px,92%); margin:auto; }
+    header { position:sticky; top:0; z-index:5; background:#ffffffed; border-bottom:1px solid var(--line); backdrop-filter:blur(10px); }
+    nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { text-decoration:none; font-size:1.15rem; font-weight:800; letter-spacing:.04em; }
+    .brand span { color:var(--green); }
+    .links { display:flex; flex-wrap:wrap; gap:24px; }
+    .links a { text-decoration:none; color:var(--muted); font-size:.95rem; }
+    .links a:hover { color:var(--green); }
+    .hero { background:linear-gradient(120deg,#f3faf6,#e7f2ed); padding:92px 0 84px; }
+    .hero-inner { max-width:760px; }
+    .eyebrow { color:var(--green); font-weight:700; letter-spacing:.15em; text-transform:uppercase; }
+    h1 { font-size:clamp(1.8rem,6vw,4.2rem); line-height:1.2; margin:3px 0 6px; }
+    .hero p { color:var(--muted); font-size:1.6rem; max-width:980px; }
+    .button { display:inline-block; margin-top:18px; padding:11px 23px; border-radius:999px; color:white; background:var(--green); text-decoration:none; font-weight:700; }
+    section { padding:72px 0; }
+    section.alt { background:var(--pale); }
+    .section-head { max-width:720px; margin:0 auto 34px; text-align:center; font-size:1.3rem; }
+    h2 { font-size:clamp(1.7rem,4vw,2.35rem); line-height:1.3; margin:0 0 12px; }
+    .section-head p,.muted { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    #about3 .grid { grid-template-columns:minmax(0,760px); justify-content:center; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:25px; box-shadow:0 8px 24px #243b3210; }
+    .card h3 { margin:0 0 10px; font-size:1.5rem; }
+    .card p { margin:0; color:var(--muted); font-size:1.3rem; }
+    .videos { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .video { overflow:hidden; padding:0; }
+    .video img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:#e9efec; }
+    .video-copy { padding:17px 18px 20px; }
+    .video-copy h3 { font-size:1.05rem; margin:0 0 5px; }
+    .video-copy p { color:var(--muted); font-size:.92rem; margin:0; }
+    .video-copy a { text-decoration:none; }
+    .video-copy a:hover { color:var(--green); }
+    .articles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .article-link { display:block; margin-top:15px; color:var(--green); font-weight:700; text-decoration:none; }
+    .contact { text-align:center; }
+    .contact-box { max-width:760px; margin:auto; padding:34px; background:#fff; border:1px solid var(--line); border-radius:18px; }
+    .contact-box p { margin:8px 0; }
+    footer { padding:25px 0; background:#243a34; color:#e8f1ec; font-size:.92rem; }
+    footer .wrap { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media(max-width:800px) { .grid,.videos,.articles { grid-template-columns:repeat(2,minmax(0,1fr)); } nav { align-items:flex-start; flex-direction:column; padding:16px 0; gap:8px; } .links { gap:14px; } }
+    @media(max-width:560px) { .grid,.videos,.articles { grid-template-columns:1fr; } .hero { padding:66px 0; } section { padding:54px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="主要導覽">
+      <a class="brand" href="#home"> <span></span></a>
+      <div class="links">
+        <a href="#about"></a><a href="#videos">教學影片</a><a href="#articles">知識分享</a><a href="https://line.me/ti/p/@022zsrwj">聯絡我們</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-inner">
+        <div class="eyebrow">家具行業</div>
+        <h1>家具行業專屬教育訓練與收單話術指南</h1>
+        <div>
+        <p>點擊回到經銷商</p>
+        <a class="button" href="https://line.me/ti/p/@022zsrwj" style="font-size: 1.3rem;">官LINE繼續發問</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" >
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">教育訓練</div>
+        <h2>一、 店員三步驟快速切入流程（SOP）</h2>
+      </div>
+        <div class="grid">
+          <article class="card">
+            <h3>1. 開場白（自然觀察、不傷自尊）</h3>
+            <p>按摩椅／床墊／居家館情境（聊舒壓、年輕感、生活品質）：</p>
+            <P>「大哥／姐，看您這麼注重身體保養跟生活質感，跟您分享一個我們最近才拿到的VIP合作專案——醫療團隊研發的『3D 數位智慧髮帽』，很多重視年輕感跟門面的老主顧都在悄悄訂製，重點是完全不用露臉、隱私做到極致！」</P>
+          </article>
+          <article class="card">
+            <h3>2. 快速產品介紹（30 秒講完四大亮點）</h3>
+            <p>「這個跟外面傳統假髮完全不一樣，它叫做 TruHair（3D 真能髮）：</p>
+            <p>極致自然逼真：100% 全真人原生髮純手工勾織，近看完全像自己長出來的頭髮。</p>
+            <p>無膠無夾、狂風吹不掉：用醫療級生物力學結構物理固定，1 秒戴上，戶外打高爾夫強風吹也絕對不掉。</p>
+            <p>醫療級清爽透氣：有獨家止汗轉介服務（文獻證實無副作用），流汗出油、夏天久戴也完全不悶熱長痘。</p>
+            <p>紅外線 3D 精準量身：不用像傳統假髮那樣頭上包保鮮膜，用紅外線掃描量身訂製，服貼度跟舒適度完全不同等級。」</p>
+          </article>
+          <article class="card">
+            <h3>3. 殺手鐧：極致隱私與「幾乎零接觸」保障（打消客人最大顧慮）</h3>
+            <p>「而且您完全不用擔心被認出來或有肖像權問題！我們這套系統最強的地方就是『極致隱私、幾乎零接觸』：</p>
+            <p>全程遮臉、不露面：3D 掃描可以指定在您最安心的地點（家裡、辦公室或熟悉的美髮沙龍）。掃描時有專用裝置會遮蓋住您的臉部，工程師連您的長相都看不到。</p>
+            <p>只需 1 分鐘、由信任的人協助：您只要請伴侶或信任的親友（或您平時固定的理髮師）跟工程師接洽，工程師只要 1 分鐘教您親友怎麼幫您擺放位置，掃描完成工程師立刻離開。</p>
+            <p>全流程匿名保密：後續的簽約、付款都可以由您指定的人代辦，或直接線上完成。除了您原本就認識的理髮師之外，包括 TruHair 總部團隊在內，沒有任何一個陌生人會知道訂製這頂智慧髮的是哪一位，成品直接保密送到您手上，完全沒有任何曝光或肖像疑慮！」</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about2" style="background:#e1ebe6;">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>二、 店員實戰 QA 應對庫（客人最常問的 5 題）</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Q1：會不會被掃描的工程師或你們公司的人認出來？我不想讓別人知道我有訂製假髮。</h3>
+            <p>A：「店員回答：「完全不會！這是我們最自豪的『零接觸隱私機制』。您可以指定在自家或隱密空間掃描，過程中臉部會有專用遮蓋裝置，工程師只需 1 分鐘指導您的伴侶或信任親友協助定位，掃完馬上離場。後續簽約與付款也能線上或由親友代辦，連 TruHair 總部系統裡都沒有您的長相資料，誰都不知道是您訂的！」</p>
+          </article>
+          <article class="card">
+            <h3>Q2：我沒有去過店面試戴，這樣做出來會自然、會合頭型嗎？</h3>
+            <p>A：店員回答：「這就像訂製高級西裝一樣，傳統試戴的公版反而不合頭型。我們用醫療級紅外線 3D 掃描，連頭型微小的弧度與髮旋位置都精準建檔，再由職人用 100% 全真人原生髮一根根純手工勾織，做出來比現成試戴的還要服貼、自然到近看都看不出來。」</p>
+          </article>
+          <article class="card">
+            <h3>Q3：打高爾夫球風那麼大，又沒有膠水跟夾子，真的不會飛走嗎？</h3>
+            <p> 店員回答：「您放心，這是醫療團隊運用『生物力學原理』研發的專利物理固定結構，就像精密牙套卡住齒列一樣穩固貼合頭型。只要 1 秒戴上就牢牢固定，就算強風揮桿或低頭撿球也紋絲不動，而且不用黏膠才不會傷害原本健康的毛囊。」</p>
+          </article>
+          <article class="card">
+            <h3>Q4：台灣夏天這麼熱，戴著打球或出門會不會滿頭大汗、頭皮發炎？</h3>
+            <p> 店員回答：「完全解決了！除了內網本身極致輕薄透氣之外，我們還提供『醫療級獨家止汗轉介服務』，經過醫學文獻證實安全無副作用，讓您頭皮保持清爽不出油，夏天戴一整天也輕鬆自在。」</p>
+          </article>
+          <article class="card">
+            <h3>Q5：以後如果我要再訂一頂，或我常去國外，要怎麼處理？</h3>
+            <p>店員回答：「只要掃描建檔一次，您的 3D 頭型數據就會加密保存在全球雲端系統裡。以後不管您人在美國、日本或世界任何地方，只要線上點選加訂，同樣 100% 精準尺寸的智慧髮就會直接寄到您手上，完全不用再重新掃描！」</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about3">
+      <div class="wrap">
+        <div class="section-head">
+          <h2> 三、 店員「一鍵轉介」收單小提醒（給店員的內部備忘）</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <p>店員不需要懂技術或報價細節：只要成功引起客人興趣，拿到客人的聯絡方式（或請客人掃描該店專屬的推薦 QR Code／提供專屬推薦碼），後續交由 TruHair 線上專員一對一匿名接洽即可。</p>
+            <p>只要這組數據首次從貴店建檔：未來這位客人無論在全球任何角落回購、加訂，系統都會自動將分潤歸屬於貴店！</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section class="alt contact" id="contact">
+      <div class="wrap"><div class="section-head"><div class="eyebrow">Contact</div><h2>聯絡我們</h2><p></p></div>
+        
+      <a class="button" href="https://line.me/ti/p/@022zsrwj" target="_blank" rel="noopener">回到經銷商官方LINE</a>
+
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span></span><a href="" target="_blank" rel="noopener"></a></div></footer>
+</body>
+</html>
